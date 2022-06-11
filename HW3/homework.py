@@ -76,7 +76,7 @@ def get_paths(date):
 
 
 @flow(task_runner=SequentialTaskRunner())
-def main(date="2021-08-15"):
+def main(date=None):
     if date is None:
         date = datetime.now()
 
